@@ -7,12 +7,17 @@ import {
 } from "react-router-dom";
 
 import About from "./Pages/About/About";
+import Landing from "./Pages/Landing/Landing";
 import Home from "./Pages/Home/Home";
 
 const router = createBrowserRouter(
   [
     {
       path:"/",
+      element: <Landing/>
+    },
+    {
+      path:"/home",
       element: <Home/>
     },
   {

@@ -1,3 +1,12 @@
 #nav-cont{
-    background-color: rgb(31, 58, 31);
+    background-color: rgba(19, 36, 19, 0.9);
+    height: 60px;
+    
+}
+.nav-logo{
+    height: 50px;
+}
+
+#basic-navbar-nav{
+    text-align: center;
 }
