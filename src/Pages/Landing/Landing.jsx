@@ -2,6 +2,12 @@ import React, { useEffect } from "react";
 import TopNav from "../../Components/Navbar/Navbar";
 import "./Landing.css";
 import logo from "../../assets/logo.png";
+import l1 from '../../assets/1.png';
+import l2 from '../../assets/2.png';
+import l3 from '../../assets/3.png';
+import l4 from '../../assets/4.png';
+import btn_bg from '../../assets/btn_bg.png';
+import arrow from '../../assets/arrow.png';
 
 export default function Landing() {
   useEffect(() => {
@@ -12,10 +18,10 @@ export default function Landing() {
     ctx.canvas.width = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
 
-    ctx.font = "20px Arial";
+    ctx.font = "14px Arial";
     ctx.fillStyle = "#444444";
 
-    const fontSize = 20;
+    const fontSize = 14;
     const columns = Math.floor(canvas.width / fontSize);
     const rows = Math.floor(canvas.height / fontSize);
 
@@ -37,7 +43,7 @@ export default function Landing() {
     }
 
     // Vars for manually calculating frame rate
-    const fps = 10;
+    const fps = 5;
     const interval = 1000 / fps;
     let now;
     let then = Date.now();
@@ -86,35 +92,31 @@ export default function Landing() {
   setInterval(() => {
     changeColour(i);
     i = i + 1;
-  }, 1500);
+  }, 2000);
 
   return (
     <>
-      {/* <TopNav /> */}
-
+      <img src={logo} className='landing-logo'/>    
       <div class="home_box">
-        <canvas id="binary-canvas" style={{ zIndex: 1, position: "fixed" }} />
+        <canvas id="binary-canvas" style={{ zIndex: 3, position: "fixed" }} />
+
+
         <div
-          style={{
-            width: "60vw",
-            height: "80vh",
-            backgroundColor: "black",
-            position: "relative",
-            zIndex: 5,
-            marginLeft: "20vw",
-            marginTop: "10vh",
-            borderRadius: "10px",
-          }}
+          className="landing-title"
         >
-          <img src={logo} className="home-logo" />
-          <div className="home-title">Manipal Open Source Society</div>
-          <div>
-            <a href="/home"><button type="button" class="btn btn-dark home-btn">
-            <b>Enter The World Of Open Source With MOSS</b>
-            </button>
-            </a>
-          </div>
+         <img src={l1} className='title-img'/>
+         <img src={l2} className='title-img' id="img-o"/>
+         <img src={l3} className='title-img' id="img-s1"/>
+         <img src={l4} className='title-img' id="img-s2"/>
+
         </div>
+        <div  className="landing-div">
+        <img src={btn_bg} className={'btn_bg'}/>
+        <a href="/home">
+        <img src={arrow} className={'arrow'}/>
+        </a>
+        </div>
+      
       </div>
     </>
   );

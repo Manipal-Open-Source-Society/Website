@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 .home_box{
     background-color: black;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
 
-.home-logo{
-    width: 20vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1rem;
-    color: #68a977b1;
+.landing-logo{
+   position: absolute;
+   z-index: 10;
+   top: 10px;
+   right: 10px;
+   height: 70px;
 }
 
 .home-title{
@@ -23,7 +25,7 @@
 }
 
 #binary-canvas{
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .home-btn{
@@ -42,3 +44,69 @@
 
 
 }
+
+.landing-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+
+}
+.landing-title{
+  
+    color: rgba(255, 255, 255, 0.808);
+    letter-spacing: 5rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    z-index: 10;
+    position: relative;
+padding-left: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.title-img{
+    
+    width: 15rem;
+    display: block;
+    margin: 0rem 1rem;
+}
+
+#img-o{
+    transform: translate(-5%,-40%);
+}
+
+#img-s1{
+    transform: translate(5%,-80%);
+}
+
+#img-s2{
+    transform: translate(5%,-120%);
+}
+
+.landing-div{
+    position: absolute;
+    right: 20vw;
+    top:20vh;
+    height:60vh;
+    
+    background-color: transparent;
+}
+.btn_bg{
+    height:100%;
+    animation: rotate 15s infinite;
+    animation-timing-function: linear;
+
+}
+
+.arrow{
+    height:40vh;
+    width: 40vh;
+    position: absolute;
+    border: none;
+    /* border-radius: 50%; */
+    z-index: 10;
+    transform: translate(-50vh,10vh);
+}
+@keyframes rotate {
+    0% {transform: rotate(360deg);}
+  }
