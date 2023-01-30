@@ -14,11 +14,12 @@ export default function TopNav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav className="mx-auto">
-            <Nav.Link className='mx-3' href="#home">Our Vision</Nav.Link>
-            <Nav.Link className='mx-3' href="#about">About Us</Nav.Link>
-            <Nav.Link className='mx-3' href="#blog">Blog</Nav.Link>
-            <Nav.Link className='mx-3' href="#events">Past Events</Nav.Link>
-            <Nav.Link className='mx-3' href="#contact">Contact Us</Nav.Link>
+            {/* <Nav.Link className='mx-3' id='nav-item'  href="#home">Our Vision</Nav.Link> */}
+            <Nav.Link className='mx-3' id='nav-item2' href="#about">About Us</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href="#blog">Blog</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href="#events">Past Events</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href="#contact">Contact Us</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href="./team">Team</Nav.Link>
 
            
           </Nav>

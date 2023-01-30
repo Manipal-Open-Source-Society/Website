@@ -103,9 +103,13 @@ padding-left: 1rem;
     width: 40vh;
     position: absolute;
     border: none;
-    /* border-radius: 50%; */
     z-index: 10;
     transform: translate(-50vh,10vh);
+    transition: 0.5s;
+}
+
+.arrow:hover{
+    transform: translate(-50vh,10vh) scale(1.05);
 }
 @keyframes rotate {
     0% {transform: rotate(360deg);}

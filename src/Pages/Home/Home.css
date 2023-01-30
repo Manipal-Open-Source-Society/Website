@@ -1,6 +1,5 @@
 .main-container{
-    background-color: rgba(19, 36, 19);
-    height: 100vh;
+    background-color: #041414;
     overflow-x: hidden;
-
+    color: #a2c2b5;
 }

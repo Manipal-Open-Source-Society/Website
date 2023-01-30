@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+
+.contact-container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #041414;
+    overflow-y: hidden;
+}
+
+.contact-h{
+    font-size: 2.2rem;
+    width: 55vw;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 30vh;
+}
+
+.next-btn{
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    color: #041414;
+    overflow-x: hidden;
+    background-color: #a2c2b5;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem auto;
+    font-weight:700;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-btn:hover{
+    cursor: pointer;
+}
+
+.next-btn-2{
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20px;
+    color: #041414;
+    overflow-x: hidden;
+    background-color: #a2c2b5;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:700;
+    margin-left: 80%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transform: translate(-85px,-40px);
+}
+
+.next-btn-2:hover{
+    cursor: pointer;
+}
+
+.dr{
+    padding: auto;
+    transform: translateY(-2px);
+}
+
+.c-form-inp{
+    background-color: transparent;
+    border: none;
+    color: #a2c2b5;
+    width: 100%;
+    border-bottom: 1px solid #a2c2b5;
+    font-size: 2rem;
+    width: 80%;
+
+}
+.c-form-inp::placeholder{
+    font-weight: 900;
+    border: hidden;
+    text-align: center;
+}
+
+.c-form-inp:focus{
+    outline: none;
+}

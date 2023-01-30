@@ -1,12 +1,19 @@
 #nav-cont{
     background-color: rgba(19, 36, 19, 0.9);
     height: 60px;
-    
+    background-color: #041414;
+    overflow: hidden;
+    color: #a2c2b5;   
 }
 .nav-logo{
     height: 50px;
 }
-
+#nav-item2{
+    color: #a2c2b5;   
+}
+.active{
+    color: white !important;
+}
 #basic-navbar-nav{
     text-align: center;
 }
