@@ -2,12 +2,31 @@
 
 .contact-container{
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #041414;
     overflow-y: hidden;
 }
+.contact-title{
+    color: #a2c2b5;
+text-align: center;
+font-size: 2.2rem;
+padding-top: 2rem;
+text-transform: uppercase;
+}
 
 .contact-h{
+    font-size: 2.2rem;
+    width: 52vw;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 42vh;
+}
+
+.contact-h3{
     font-size: 2.2rem;
     width: 55vw;
     margin: 0 auto;
@@ -16,8 +35,21 @@
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
     font-family: 'Source Code Pro', monospace;
-    margin-top: 30vh;
+    margin-top: 35vh;
 }
+
+.contact-h2{
+    font-size: 2.2rem;
+    width: 55vw;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 0vh;
+}
+
 
 .next-btn{
     border: none;
@@ -53,9 +85,7 @@
     transform: translate(-85px,-40px);
 }
 
-.next-btn-2:hover{
-    cursor: pointer;
-}
+
 
 .dr{
     padding: auto;
@@ -80,4 +110,63 @@
 
 .c-form-inp:focus{
     outline: none;
+}
+
+.robot-gif{
+    width: 18rem;
+    top: 40vh;
+    left: 2vw;
+    display: block;
+    position: absolute;
+}
+
+.ty-robot{
+    width: 18rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10vh;
+}
+
+#c0, #c1, #c2, #c3, #c4{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#c0{
+    opacity: 1;
+}
+
+#btn-id{
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.contact-icon{
+    color: #a2c2b5;
+    font-size: 1.6rem;
+    margin: 1rem;
+    transition: 0.5s;
+
+}
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 8px;
+    top: 55%;
+}
+
+.contact-icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.next-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05) translateX(-50%);
+}
+
+.next-btn-2:hover{
+    cursor: pointer;
+    transform: scale(1.05) translate(-85px,-40px);
 }
