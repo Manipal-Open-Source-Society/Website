@@ -1,172 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap");
 
-.contact-container{
-    width: 100vw;
-    height: 100vh;
-    background-color: #041414;
-    overflow-y: hidden;
+.contact-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #041414;
+  overflow-y: hidden;
+  position: relative;
 }
-.contact-title{
-    color: #a2c2b5;
-text-align: center;
-font-size: 2.2rem;
-padding-top: 2rem;
-text-transform: uppercase;
+.contact-title {
+  color: #a2c2b5;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #a0c6b7 20%,
+    #49675b 40%,
+    #729084 60%,
+    #a0c6b7 80%
+  );
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 1.8s linear infinite;
 }
-
-.contact-h{
-    font-size: 2.2rem;
-    width: 52vw;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 800;
-    font-family: 'Times New Roman', Times, serif;
-    font-family: 'Source Code Pro', monospace;
-    margin-top: 42vh;
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
-
-.contact-h3{
-    font-size: 2.2rem;
-    width: 55vw;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 800;
-    font-family: 'Times New Roman', Times, serif;
-    font-family: 'Source Code Pro', monospace;
-    margin-top: 35vh;
-}
-
-.contact-h2{
-    font-size: 2.2rem;
-    width: 55vw;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 800;
-    font-family: 'Times New Roman', Times, serif;
-    font-family: 'Source Code Pro', monospace;
-    margin-top: 0vh;
-}
-
-
-.next-btn{
-    border: none;
-    padding: 0.5rem 2rem;
-    border-radius: 20px;
-    color: #041414;
-    overflow-x: hidden;
-    background-color: #a2c2b5;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 2rem auto;
-    font-weight:700;
-    margin-left: 50%;
-    transform: translateX(-50%);
+.contact-h {
+  font-size: 2.2rem;
+  width: 52vw;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Source Code Pro", monospace;
+  margin-top: 42vh;
 }
 
-.next-btn:hover{
-    cursor: pointer;
+.contact-h3 {
+  font-size: 2.2rem;
+  width: 55vw;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Source Code Pro", monospace;
+  margin-top: 35vh;
 }
 
-.next-btn-2{
-    border: none;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 20px;
-    color: #041414;
-    overflow-x: hidden;
-    background-color: #a2c2b5;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:700;
-    margin-left: 80%;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    transform: translate(-85px,-40px);
+.contact-h2 {
+  font-size: 2.2rem;
+  width: 55vw;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Source Code Pro", monospace;
+  margin-top: 0vh;
 }
 
-
-
-.dr{
-    padding: auto;
-    transform: translateY(-2px);
+.next-btn {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  color: #041414;
+  overflow-x: hidden;
+  background-color: #a2c2b5;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2rem auto;
+  font-weight: 700;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
-.c-form-inp{
-    background-color: transparent;
-    border: none;
-    color: #a2c2b5;
-    width: 100%;
-    border-bottom: 1px solid #a2c2b5;
-    font-size: 2rem;
-    width: 80%;
-
-}
-.c-form-inp::placeholder{
-    font-weight: 900;
-    border: hidden;
-    text-align: center;
+.next-btn:hover {
+  cursor: pointer;
 }
 
-.c-form-inp:focus{
-    outline: none;
+.next-btn-2 {
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 20px;
+  color: #041414;
+  overflow-x: hidden;
+  background-color: #a2c2b5;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  margin-left: 80%;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transform: translate(-85px, -40px);
 }
 
-.robot-gif{
-    width: 18rem;
-    top: 40vh;
-    left: 2vw;
-    display: block;
-    position: absolute;
+.dr {
+  padding: auto;
+  transform: translateY(-2px);
 }
 
-.ty-robot{
-    width: 18rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding-top: 10vh;
+.c-form-inp {
+  background-color: transparent;
+  border: none;
+  color: #a2c2b5;
+  width: 100%;
+  border-bottom: 1px solid #a2c2b5;
+  font-size: 2rem;
+  width: 80%;
+}
+.c-form-inp::placeholder {
+  font-weight: 900;
+  border: hidden;
+  text-align: center;
 }
 
-#c0, #c1, #c2, #c3, #c4{
-    opacity: 0;
-    transition: 0.5s;
+.c-form-inp:focus {
+  outline: none;
 }
 
-#c0{
-    opacity: 1;
+.robot-gif {
+  width: 18rem;
+  top: 40vh;
+  left: 2vw;
+  display: block;
+  position: absolute;
 }
 
-#btn-id{
-    transition: 0.5s;
-    opacity: 0;
+.ty-robot {
+  width: 18rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10vh;
 }
 
-.contact-icon{
-    color: #a2c2b5;
-    font-size: 1.6rem;
-    margin: 1rem;
-    transition: 0.5s;
-
-}
-.icon-container{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 8px;
-    top: 55%;
+#c0,
+#c1,
+#c2,
+#c3,
+#c4 {
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.contact-icon:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+#c0 {
+  opacity: 1;
 }
 
-.next-btn:hover{
-    cursor: pointer;
-    transform: scale(1.05) translateX(-50%);
+#btn-id {
+  transition: 0.5s;
+  opacity: 0;
 }
 
-.next-btn-2:hover{
-    cursor: pointer;
-    transform: scale(1.05) translate(-85px,-40px);
+.contact-icon {
+  color: #a2c2b5;
+  font-size: 1.6rem;
+  margin: 1rem;
+  transition: 0.5s;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+
+.contact-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.next-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05) translateX(-50%);
+}
+
+.next-btn-2:hover {
+  cursor: pointer;
+  transform: scale(1.05) translate(-85px, -40px);
 }

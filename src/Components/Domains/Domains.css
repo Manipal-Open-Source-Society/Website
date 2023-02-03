@@ -1,0 +1,122 @@
+.domain-container{
+    width: 100%;
+    background-color: #a2c2b5;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.domains-title{
+    color: #041414;
+text-align: center;
+font-size: 3.5rem;
+font-weight: 800;
+padding-top: 1rem;
+margin-bottom: 3rem;
+text-transform: uppercase;
+background: linear-gradient(to right, #49675b 20%, #1e2d27 40%, #3b4e47 60%, #151c19 80%);
+background-size: 200% auto;
+
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+animation: shine 1.8s linear infinite;
+
+}
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .domain-box{
+    display: flex;
+    flex-direction: row;
+  }
+  .domain-left{
+    display: inline-block;
+    width: 40%;
+    padding-left: 4rem;
+  }
+
+  .domain-right{
+    display: inline-block;
+    width: 55%;
+  }
+
+  .domain-leftBox{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+  }
+  .domain-listItem{
+    width: 100%;
+    color: #041414;
+    font-size: 1.4rem;
+    margin: 1rem 2rem;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    text-align: left;
+    height: 60px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    transition: 0.5s;
+    padding-bottom: 0.5rem;
+    height: max-content;
+  }
+
+
+  .domain-listItem-h{
+    width: 100%;
+    color: #041414;
+    font-size: 1.4rem;
+    transition: 0.5s;
+    transform: scale(1.01) translateX(20px);
+    font-weight: 700;
+    position: relative;
+    text-align: left;
+    height: 60px;
+    border-bottom: 1.5px solid #041414;
+    padding-left: 50px;
+    height: max-content;
+    padding-bottom: 0.5rem;
+  }
+
+  
+  .domain-icon{
+    width: 30px;
+    margin-right: 15px;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+  }
+
+  .domain-icon-h{
+    width: 34px;
+    margin-left: 0px;
+    left: 0;
+    position: absolute;
+  }
+
+
+  .domain-rightBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-height: 22rem; */
+    margin-top: -3rem;
+    /* background-color: red; */
+  }
+
+  .right-img{
+    width: 70%;
+    border-radius: 20px;
+  }

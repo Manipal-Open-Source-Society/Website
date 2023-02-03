@@ -16,6 +16,8 @@ export default function TopNav() {
           <Nav className="mx-auto">
             {/* <Nav.Link className='mx-3' id='nav-item'  href="#home">Our Vision</Nav.Link> */}
             <Nav.Link className='mx-3' id='nav-item2' href="#about">About Us</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href="#domains">Domains</Nav.Link>
+
             <Nav.Link className='mx-3' id='nav-item2' href="#blog">Blog</Nav.Link>
             <Nav.Link className='mx-3' id='nav-item2' href="#events">Past Events</Nav.Link>
             <Nav.Link className='mx-3' id='nav-item2' href="#contact">Contact Us</Nav.Link>
