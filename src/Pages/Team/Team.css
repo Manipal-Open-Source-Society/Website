@@ -1,0 +1,125 @@
+.team-container {
+  width: 100%;
+  background-color: #041414;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.team-title {
+  color: #a2c2b5;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  padding-top: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #a0c6b7 20%,
+    #49675b 40%,
+    #729084 60%,
+    #a0c6b7 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1.8s linear infinite;
+}
+
+.team-subtitle {
+    color: #a2c2b5;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-top: 0rem;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to right,
+      #a0c6b7 20%,
+      #49675b 40%,
+      #729084 60%,
+      #a0c6b7 80%
+    );
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1.8s linear infinite;
+  }
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.teamC{
+    text-align: center;
+}
+.team-card{
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    display: inline-block;
+    width: max-content;
+    border-radius: 10px;
+    padding-top: 0;
+    height: 12rem;
+    margin-bottom: 10rem;
+}
+.team-img{
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transform: translateY(-50%);
+    border: 5px solid #729084;
+    padding: 2px;
+
+}
+
+
+
+.img-container{
+    position: relative;
+}
+.team-name{
+    font-size: 1.2rem;
+    margin: 0.25rem;
+    color: #a2c2b5;
+    font-weight: 700;
+}
+
+.team-desig{
+    font-size: 1rem;
+    margin: 0.25rem;
+    color: #a2c2b5;
+    color: white;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.team-content{
+    transform: translateY(-5rem);
+    text-align: center;
+    
+}
+
+.team-icon-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.team-icon{
+    color: white;
+    font-size: 1.5rem;
+}
