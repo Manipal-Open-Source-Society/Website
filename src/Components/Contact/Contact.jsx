@@ -5,6 +5,7 @@ import {
   AiFillLinkedin,
   AiFillInstagram,
 } from "react-icons/ai";
+import {BsMedium} from 'react-icons/bs';
 import { MdEmail } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 import robot from "../../assets/robot.gif";
@@ -122,6 +123,9 @@ export default function Contact() {
         </a>
         <a href="mailto:mossmanipal@gmail.com" target="_top">
         <MdEmail className="contact-icon" />
+        </a>
+        <a href="https://medium.com/@mossmanipal" target="_blank">
+        <BsMedium className="contact-icon" />
         </a>
       </div>
     </div>

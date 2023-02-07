@@ -101,8 +101,9 @@ animation: shine 1.8s linear infinite;
   }
 
   .right-img{
-    width: 70%;
+    width: 90%;
     border-radius: 20px;
+    margin-top: 3rem;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 15px 10px #222);
     }

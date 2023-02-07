@@ -1,0 +1,87 @@
+.blog-container{
+    width: 100%;
+    background-color: #041414;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.blog-title{
+    color: #a2c2b5;
+text-align: center;
+font-size: 3.5rem;
+font-weight: 800;
+padding-top: 2rem;
+margin-bottom: 2rem;
+text-transform: uppercase;
+background: linear-gradient(to right, #a0c6b7 20%, #49675b 40%, #729084 60%, #a0c6b7 80%);
+background-size: 200% auto;
+
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+animation: shine 1.8s linear infinite;
+
+}
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.blog-cards-container{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.blog-card{
+    width: 25rem;
+    background-color: black;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.blog-img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.blog-card-title{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0.5rem 0rem;
+}
+
+.blog-card-content{
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 170%;
+    font-style: italic;
+    margin-bottom: .75rem;
+}
+
+.blog-card-more a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.blog-card-more{
+    margin-bottom: 1rem;
+}
+
+.blog-card-date{
+    color: white;
+    text-align: right;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}

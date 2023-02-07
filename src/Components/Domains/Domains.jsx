@@ -39,7 +39,7 @@ export default function Domains() {
       if (highlight == "sm") {
         setHighlight("cs");
       }
-    }, 2500);
+    }, 2000);
 
     return () => {
       clearTimeout(t);
