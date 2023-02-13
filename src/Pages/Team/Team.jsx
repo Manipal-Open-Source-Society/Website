@@ -97,17 +97,6 @@ export default function Team() {
         email: "vanshitha02@gmail.com",
         linkedin: "https://www.linkedin.com/in/vanshitha-r-b4b3a7205/",
       },
-
-
-
-      {
-        name: "Neetigya Poddar",
-        img: Neetigya,
-        designation: "Core Software Maintainer",
-        github: "https://github.com/NeetigyaPod",
-        email: "neetigyapoddar1@gmail.com",
-        linkedin: "",
-      },
   ];
   return (
     <div className="team-container">
