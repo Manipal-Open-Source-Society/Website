@@ -17,3 +17,8 @@
 #basic-navbar-nav{
     text-align: center;
 }
+
+.dropdown-menu-show{
+    position: absolute;
+    z-index: 100;
+}

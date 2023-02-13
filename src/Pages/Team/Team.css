@@ -85,6 +85,11 @@
 
 }
 
+#basic-nav-dropdown{
+  position: absolute;
+  background-color: red;
+  z-index: 100;
+}
 
 
 .img-container{

@@ -4,11 +4,12 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { HiEnvelope } from "react-icons/hi2";
 import Utkarsh from "../../assets/team/Utkarsh.png";
 import Ishita from "../../assets/team/Ishita.jpeg";
+import Arnav from "../../assets/team/Arnav.jpeg";
 import Udit from "../../assets/team/Udit.png";
 import Priyamvada from "../../assets/team/Priyamvada.png";
 import Vanshitha from "../../assets/team/Vanshitha.png";
 import Vainavi from "../../assets/team/Vainavi.png";
-import  Neetigya from "../../assets/team/Neetigya.png";
+import Neetigya from "../../assets/team/Neetigya.png";
 
 import Suryaansh from "../../assets/team/Suryaansh.png";
 import Trisha from "../../assets/team/Trisha.png";
@@ -26,7 +27,7 @@ export default function Team() {
       email: "utkarshanand221@gmail.com",
       linkedin: "https://www.linkedin.com/in/utkarsh-anand-93260617b/",
     },
-    
+
     {
       name: "Ishita Saha",
       img: Ishita,
@@ -36,7 +37,7 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/ishita-saha-07574b1b8/?originalSubdomain=in",
     },
 
-    
+
     {
       name: "Shourya Gupta",
       img: Shourya,
@@ -45,7 +46,7 @@ export default function Team() {
       email: "13.shourya@gmail.com",
       linkedin: "https://www.linkedin.com/in/shourya-gupta-80237b1b9/",
     },
-    
+
     {
       name: "Vainavi Samant",
       img: Vainavi,
@@ -58,19 +59,18 @@ export default function Team() {
       name: "Suryaansh Rathinam",
       img: Suryaansh,
       designation: "Technical Maintainer",
-      github: "",
-      email: "",
-      linkedin: "",
+      github: "https://github.com/suryaansh2002/",
+      email: "suryaansh2002@gmail.com",
+      linkedin: "https://www.linkedin.com/in/suryaansh-rathinam-33a86b1b6/",
     },
-        {
+    {
       name: "Trisha Jaipuriar",
       img: Trisha,
       designation: "HR and PR Head",
-      github: "",
-      email: "",
-      linkedin: "",
+      github: "https://github.com/Trisha7781",
+      email: "trishajaipuriark32002@gmail.com",
+      linkedin: "https://www.linkedin.com/in/trisha-jaipuriar-82877b217/",
     },
-
     {
       name: "Priyamvadha Chandrasekar",
       img: Priyamvada,
@@ -79,32 +79,118 @@ export default function Team() {
       email: "",
       linkedin: "",
     },
-      {
-        name: "Udit Amin",
-        img: Udit,
-        designation: "AI/ML Maintainer",
-        github: "https://github.com/udit-amin",
-        email: "uditsamin@gmail.com",
-        linkedin: "https://www.linkedin.com/in/udit-amin-857b601b7",
-      },
-
-
-      {
-        name: "Vanshitha",
-        img: Vanshitha,
-        designation: "Development Maintainer",
-        github: "https://github.com/Vanshitha",
-        email: "vanshitha02@gmail.com",
-        linkedin: "https://www.linkedin.com/in/vanshitha-r-b4b3a7205/",
-      },
+    {
+      name: "Udit Amin",
+      img: Udit,
+      designation: "AI/ML Maintainer",
+      github: "https://github.com/udit-amin",
+      email: "uditsamin@gmail.com",
+      linkedin: "https://www.linkedin.com/in/udit-amin-857b601b7",
+    },
+    {
+      name: "Vanshitha",
+      img: Vanshitha,
+      designation: "Development Maintainer",
+      github: "https://github.com/Vanshitha",
+      email: "vanshitha02@gmail.com",
+      linkedin: "https://www.linkedin.com/in/vanshitha-r-b4b3a7205/",
+    },
   ];
+
+  const founders = [
+    {
+      name: "Arnav Agrawal",
+      img: Arnav,
+      designation: "Co-Founder and Executive Lead",
+      github: "https://github.com/arnavagrawal22",
+      email: "arnavagr22@gmail.com",
+      linkedin: "https://www.linkedin.com/in/arnavagrawal22/",
+    },
+
+    {
+      name: "Ishita Saha",
+      img: Ishita,
+      designation: "Co-Founder and Executive Lead",
+      github: "https://github.com/ishitasaha3002",
+      email: "ishitasaha3002@gmail.com",
+      linkedin: "https://www.linkedin.com/in/ishita-saha-07574b1b8/?originalSubdomain=in",
+    },
+  ];
+  const website = [
+    {
+      name: "Suryaansh Rathinam",
+      img: Suryaansh,
+      designation: "Technical Maintainer",
+      github: "https://github.com/suryaansh2002/",
+      email: "suryaansh2002@gmail.com",
+      linkedin: "https://www.linkedin.com/in/suryaansh-rathinam-33a86b1b6/",
+    },
+    {
+      name: "Trisha Jaipuriar",
+      img: Trisha,
+      designation: "HR and PR Head",
+      github: "https://github.com/Trisha7781",
+      email: "trishajaipuriark32002@gmail.com",
+      linkedin: "https://www.linkedin.com/in/trisha-jaipuriar-82877b217/",
+    },
+  ]
   return (
     <div className="team-container">
-    <TopNav page={'team'}/>
+      <TopNav page={'team'} />
       <div className="team-title">Our Team</div>
       <div className="team-subtitle">Current Board</div>
       <div className="teamC">
         {members.map((person) => (
+          <div className="team-card">
+            <div className="img-container">
+              <img src={person.img} className="team-img" />
+            </div>
+            <div className="team-content">
+              <div className="team-name">{person.name}</div>
+              <div className="team-desig">{person.designation}</div>
+              <div className="team-icon-cont">
+                <a href={person.linkedin}>
+                  <AiFillLinkedin className="team-icon" />
+                </a>
+                <a href={person.email}>
+                  <HiEnvelope className="team-icon" />
+                </a>
+                <a href={person.github}>
+                  <AiFillGithub className="team-icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="team-subtitle">Founders</div>
+      <div className="teamC">
+        {founders.map((person) => (
+          <div className="team-card">
+            <div className="img-container">
+              <img src={person.img} className="team-img" />
+            </div>
+            <div className="team-content">
+              <div className="team-name">{person.name}</div>
+              <div className="team-desig">{person.designation}</div>
+              <div className="team-icon-cont">
+                <a href={person.linkedin}>
+                  <AiFillLinkedin className="team-icon" />
+                </a>
+                <a href={person.email}>
+                  <HiEnvelope className="team-icon" />
+                </a>
+                <a href={person.github}>
+                  <AiFillGithub className="team-icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="team-subtitle">Website Team</div>
+      <div className="teamC">
+        {website.map((person) => (
           <div className="team-card">
             <div className="img-container">
               <img src={person.img} className="team-img" />

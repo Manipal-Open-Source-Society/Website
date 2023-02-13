@@ -9,6 +9,7 @@ import {
 import Landing from "./Pages/Landing/Landing";
 import Home from "./Pages/Home/Home";
 import Team from "./Pages/Team/Team";
+import Msoc from "./Pages/Msoc/Msoc";
 
 const router = createBrowserRouter(
   [
@@ -23,8 +24,11 @@ const router = createBrowserRouter(
     {
       path:"/team",
       element: <Team/>
+    },
+    {
+      path:"/msoc",
+      element: <Msoc/>
     }
-
   ]
 );
 

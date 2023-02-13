@@ -21,7 +21,8 @@ export default function TopNav(props) {
             <Nav.Link className='mx-3' id='nav-item2' href={props.page=='home' ? "#blog": "../home/#blog"}>Blog</Nav.Link>
             <Nav.Link className='mx-3' id='nav-item2' href={props.page=='home' ? "#events": "../home/#events"}>Past Events</Nav.Link>
             <Nav.Link className='mx-3' id='nav-item2' href={props.page=='home' ? "#contact": "../home/#contact"}>Contact Us</Nav.Link>
-            <Nav.Link className='mx-3' id='nav-item2' href={props.page=='home' ? "./team": "../#team"}>Team</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href={props.page=='home' ? "./team": "../team"}>Team</Nav.Link>
+            <Nav.Link className='mx-3' id='nav-item2' href={props.page=='home' ? "../msoc": "../msoc"}>MSOC</Nav.Link>
 
            
           </Nav>
