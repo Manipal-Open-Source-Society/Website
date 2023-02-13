@@ -7,9 +7,13 @@ import Ishita from "../../assets/team/Ishita.jpeg";
 import Udit from "../../assets/team/Udit.png";
 import Priyamvada from "../../assets/team/Priyamvada.png";
 import Vanshitha from "../../assets/team/Vanshitha.png";
+import Vainavi from "../../assets/team/Vainavi.png";
+import  Neetigya from "../../assets/team/Neetigya.png";
 
 import Suryaansh from "../../assets/team/Suryaansh.png";
 import Trisha from "../../assets/team/Trisha.png";
+import Shourya from "../../assets/team/Shourya.png";
+
 import TopNav from "../../Components/Navbar/Navbar";
 
 export default function Team() {
@@ -35,7 +39,7 @@ export default function Team() {
     
     {
       name: "Shourya Gupta",
-      img: Suryaansh,
+      img: Shourya,
       designation: "Open Source Moderator and Executive Lead",
       github: "https://github.com/shourya2002-geek",
       email: "13.shourya@gmail.com",
@@ -44,7 +48,7 @@ export default function Team() {
     
     {
       name: "Vainavi Samant",
-      img: Trisha,
+      img: Vainavi,
       designation: "Executive Lead",
       github: "https://github.com/VainaviS",
       email: "vainavi.2709@gmail.com",
@@ -70,7 +74,7 @@ export default function Team() {
     {
       name: "Priyamvadha Chandrasekar",
       img: Priyamvada,
-      designation: "HR and PR Head",
+      designation: "SM and Content Head",
       github: "",
       email: "",
       linkedin: "",
@@ -98,7 +102,7 @@ export default function Team() {
 
       {
         name: "Neetigya Poddar",
-        img: Suryaansh,
+        img: Neetigya,
         designation: "Core Software Maintainer",
         github: "https://github.com/NeetigyaPod",
         email: "neetigyapoddar1@gmail.com",

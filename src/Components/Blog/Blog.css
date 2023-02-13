@@ -42,11 +42,15 @@ animation: shine 1.8s linear infinite;
 }
 
 .blog-card{
-    width: 25rem;
-    background-color: black;
+    width: 23rem;
+    background-color: #041414;
     display: inline-block;
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 2rem 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid #a2c2b5;
+    border-radius: 10px;
+
 }
 
 .blog-img{
@@ -59,6 +63,7 @@ animation: shine 1.8s linear infinite;
     font-size: 1.2rem;
     font-weight: 800;
     margin: 0.5rem 0rem;
+    margin-bottom: 1.5rem;
 }
 
 .blog-card-content{
@@ -77,6 +82,7 @@ animation: shine 1.8s linear infinite;
 
 .blog-card-more{
     margin-bottom: 1rem;
+    text-decoration: underline;
 }
 
 .blog-card-date{

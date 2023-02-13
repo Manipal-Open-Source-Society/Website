@@ -4,6 +4,8 @@ export default function PastEvents() {
   return (
     <div className="events-container" id='events'>
       <div className="events-title">Our Past Events</div>
+      <div className="events-title2">COMING SOON</div>
+
     </div>
   );
 }

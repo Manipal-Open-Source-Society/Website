@@ -36,7 +36,7 @@ export default function Blog() {
                         <div className='blog-card-content'>{item.content.slice(0,150)}...</div>
                         <div className='blog-card-more'>
                             <a href={item.link} target='_blank'>
-                            Read More
+                            Read More...
                             </a>
                         </div>
                     </div>

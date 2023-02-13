@@ -35,6 +35,7 @@ animation: shine 1.8s linear infinite;
   .domain-box{
     display: flex;
     flex-direction: row;
+    margin-top: 5rem;
   }
   .domain-left{
     display: inline-block;
@@ -97,7 +98,6 @@ animation: shine 1.8s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -2rem;
   }
 
   .right-img{

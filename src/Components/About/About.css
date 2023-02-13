@@ -41,7 +41,7 @@ animation: shine 1.8s linear infinite;
     color: #a2c2b5;
     padding: 2rem;
     overflow: hidden;
-   
+    vertical-align: top;
   
 }
 
@@ -90,9 +90,10 @@ animation: shine 1.8s linear infinite;
 
 .about-content{
     line-height: 180%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
     text-align: center;
+    font-weight: 500;
 }
