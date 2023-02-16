@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import TopNav from "../../Components/Navbar/Navbar";
 import "./Landing.css";
 import logo from "../../assets/logo.png";
-import l1 from '../../assets/1.png';
-import l2 from '../../assets/2.png';
-import l3 from '../../assets/3.png';
-import l4 from '../../assets/4.png';
-import btn_bg from '../../assets/btn_bg.png';
-import arrow from '../../assets/arrow.png';
+import l1 from "../../assets/1.png";
+import l2 from "../../assets/2.png";
+import l3 from "../../assets/3.png";
+import l4 from "../../assets/4.png";
+import btn_bg from "../../assets/btn_bg.png";
+import arrow from "../../assets/arrow.png";
 
 export default function Landing() {
   useEffect(() => {
@@ -96,27 +96,21 @@ export default function Landing() {
 
   return (
     <>
-      <img src={logo} className='landing-logo'/>    
-      <div class="home_box">
+      <img src={logo} className="landing-logo" />
+      <div className="home_box">
         <canvas id="binary-canvas" style={{ zIndex: 3, position: "fixed" }} />
-
-
-        <div
-          className="landing-title"
-        >
-         <img src={l1} className='title-img'/>
-         <img src={l2} className='title-img' id="img-o"/>
-         <img src={l3} className='title-img' id="img-s1"/>
-         <img src={l4} className='title-img' id="img-s2"/>
-
+        <div className="landing-title">
+          <img src={l1} className="title-img" />
+          <img src={l2} className="title-img" id="img-o" />
+          <img src={l3} className="title-img" id="img-s1" />
+          <img src={l4} className="title-img" id="img-s2" />
         </div>
-        <div  className="landing-div">
-        <img src={btn_bg} className={'btn_bg'}/>
-        <a href="/home">
-        <img src={arrow} className={'arrow'}/>
-        </a>
+        <div className="landing-div">
+          <img src={btn_bg} className={"btn_bg"} />
+          <a href="/home">
+            <img src={arrow} className={"arrow"} />
+          </a>
         </div>
-      
       </div>
     </>
   );
