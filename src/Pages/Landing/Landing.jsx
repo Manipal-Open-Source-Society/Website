@@ -100,10 +100,18 @@ export default function Landing() {
       <div className="home_box">
         <canvas id="binary-canvas" style={{ zIndex: 3, position: "fixed" }} />
         <div className="landing-title">
-          <img src={l1} className="title-img" />
-          <img src={l2} className="title-img" id="img-o" />
-          <img src={l3} className="title-img" id="img-s1" />
-          <img src={l4} className="title-img" id="img-s2" />
+          <div className="images">
+            <img src={l1} className="title-img" />
+          </div>
+          <div className="images">
+            <img src={l2} className="title-img" id="img-o" />
+          </div>
+          <div className="images">
+            <img src={l3} className="title-img" id="img-s1" />
+          </div>
+          <div className="images">
+            <img src={l4} className="title-img" id="img-s2" />
+          </div>
         </div>
         <div className="landing-div">
           <img src={btn_bg} className={"btn_bg"} />

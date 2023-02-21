@@ -101,11 +101,27 @@
   font-weight: 500;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
   .about-box1 {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .about-content {
+    font-size: 1rem;
+    line-height: 160%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .about-title2 {
+    font-size: 1.5rem;
   }
 
   .text-box {
@@ -114,13 +130,15 @@
 
   .about-gif1 {
     position: absolute;
-    margin-top: -11rem;
-    margin-left: 80%;
+    margin-top: -16.5rem;
+    margin-left: 87%;
+    width: 100%;
   }
 
   .about-gif2 {
     position: absolute;
-    margin-top: -11rem;
-    right: 21vw;
+    margin-top: -13rem;
+    right: -9vw;
+    width: 60%;
   }
 }

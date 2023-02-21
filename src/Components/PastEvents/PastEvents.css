@@ -42,7 +42,7 @@
   text-align: center;
   font-size: 9rem;
   font-weight: 800;
-  padding-top:7rem;
+  padding-top: 7rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
   background: linear-gradient(
@@ -61,4 +61,14 @@
   -webkit-text-fill-color: transparent;
 
   animation: shine 1.2s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .events-title2 {
+    font-size: 3rem;
+  }
+
+  .events-title {
+    font-size: 2.5rem;
+  }
 }
