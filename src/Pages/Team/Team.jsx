@@ -9,11 +9,11 @@ import Udit from "../../assets/team/Udit.png";
 import Priyamvada from "../../assets/team/Priyamvada.png";
 import Vanshitha from "../../assets/team/Vanshitha.png";
 import Vainavi from "../../assets/team/Vainavi.png";
-import Neetigya from "../../assets/team/Neetigya.png";
 
 import Suryaansh from "../../assets/team/Suryaansh.png";
 import Trisha from "../../assets/team/Trisha.png";
 import Shourya from "../../assets/team/Shourya.png";
+import Sujal from "../../assets/team/Sujal.png";
 
 import TopNav from "../../Components/Navbar/Navbar";
 
@@ -75,9 +75,9 @@ export default function Team() {
       name: "Priyamvadha Chandrasekar",
       img: Priyamvada,
       designation: "SM and Content Head",
-      github: "",
-      email: "",
-      linkedin: "",
+      github: "https://github.com/priyamc11",
+      email: "priyamvadha.c@gmail.com",
+      linkedin: "https://www.linkedin.com/in/priyamvadhachandrasekar",
     },
     {
       name: "Udit Amin",
@@ -133,6 +133,14 @@ export default function Team() {
       email: "trishajaipuriark32002@gmail.com",
       linkedin: "https://www.linkedin.com/in/trisha-jaipuriar-82877b217/",
     },
+        {
+      name: "Sujal Ranjan",
+      img: Sujal,
+      designation: "Frontend Developer",
+      github: "https://github.com/Sranjan0208",
+      email: "sranjan0208@gmail.com",
+      linkedin: "https://www.linkedin.com/in/sujal-ranjan-0073401b3",
+    },
   ]
   return (
     <div className="team-container">
@@ -152,7 +160,7 @@ export default function Team() {
                 <a href={person.linkedin}>
                   <AiFillLinkedin className="team-icon" />
                 </a>
-                <a href={person.email}>
+                <a href={`mailto:${person.email}`}>
                   <HiEnvelope className="team-icon" />
                 </a>
                 <a href={person.github}>
@@ -177,7 +185,7 @@ export default function Team() {
                 <a href={person.linkedin}>
                   <AiFillLinkedin className="team-icon" />
                 </a>
-                <a href={person.email}>
+                <a href={`mailto:${person.email}`}>
                   <HiEnvelope className="team-icon" />
                 </a>
                 <a href={person.github}>
@@ -202,7 +210,7 @@ export default function Team() {
                 <a href={person.linkedin}>
                   <AiFillLinkedin className="team-icon" />
                 </a>
-                <a href={person.email}>
+                <a href={`mailto:${person.email}`}>
                   <HiEnvelope className="team-icon" />
                 </a>
                 <a href={person.github}>
@@ -212,6 +220,10 @@ export default function Team() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="team-subtitle">Core Committee</div>
+      <div className="">
+
       </div>
     </div>
   );
