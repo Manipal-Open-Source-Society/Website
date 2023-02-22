@@ -1,48 +1,52 @@
-.about-container{
-    width: 100%;
-    background-color: #041414;
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100vh;
+.about-container {
+  width: 100%;
+  background-color: #041414;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
-.about-title{
-    color: #a2c2b5;
-text-align: center;
-font-size: 3.5rem;
-font-weight: 800;
-padding-top: 2rem;
-margin-bottom: 4rem;
-text-transform: uppercase;
-background: linear-gradient(to right, #a0c6b7 20%, #49675b 40%, #729084 60%, #a0c6b7 80%);
-background-size: 200% auto;
+.about-title {
+  color: #a2c2b5;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #a0c6b7 20%,
+    #49675b 40%,
+    #729084 60%,
+    #a0c6b7 80%
+  );
+  background-size: 200% auto;
 
-color: #000;
-background-clip: text;
-text-fill-color: transparent;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-animation: shine 1.8s linear infinite;
-
+  animation: shine 1.8s linear infinite;
 }
 @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
   }
-.about-div{
-    overflow: hidden;
-    padding: 1rem;
 }
-.about-box1{
-    display: inline-block;
-    width: 50%;
-    color: #a2c2b5;
-    padding: 2rem;
-    overflow: hidden;
-    vertical-align: top;
-  
+.about-div {
+  overflow: hidden;
+  padding: 1rem;
+}
+.about-box1 {
+  display: inline-block;
+  width: 50%;
+  color: #a2c2b5;
+  padding: 2rem;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 /* .about-box2{
@@ -53,47 +57,88 @@ animation: shine 1.8s linear infinite;
     overflow: hidden; */
 /* } */
 
-.about-title2{
-    color: #a2c2b5;
-    font-weight: 700;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.about-title2 {
+  color: #a2c2b5;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-gif1 {
+  width: 60%;
+  margin-top: 3rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  width: 20vw;
+  position: absolute;
+  top: 30vh;
+  left: -22vw;
+}
+
+.about-gif2 {
+  width: 60%;
+  margin-top: 3rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  width: 20vw;
+  position: absolute;
+  top: 32vh;
+  right: 5vw;
+}
+
+.about-content {
+  line-height: 180%;
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-content {
+    font-size: 1rem;
+    line-height: 160%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .about-title2 {
+    font-size: 1.5rem;
+  }
+
+  .text-box {
     position: relative;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
-}
-
-.about-gif1{
-    width: 60%;
-    margin-top: 3rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.2;
-    width: 20vw;
+  .about-gif1 {
     position: absolute;
-    top: 30vh;
-    left: -22vw;
-}
+    margin-top: -16.5rem;
+    margin-left: 87%;
+    width: 100%;
+  }
 
-.about-gif2{
-    width: 60%;
-    margin-top: 3rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.2;
-    width: 20vw;
+  .about-gif2 {
     position: absolute;
-    top: 32vh;
-    right: 5vw;
-}
-
-.about-content{
-    line-height: 180%;
-    font-size: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 70%;
-    margin-left: 15%;
-    text-align: center;
-    font-weight: 500;
+    margin-top: -13rem;
+    right: -9vw;
+    width: 60%;
+  }
 }

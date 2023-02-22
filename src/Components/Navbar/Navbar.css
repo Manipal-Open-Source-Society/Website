@@ -1,24 +1,30 @@
-#nav-cont{
-    background-color: rgba(19, 36, 19, 0.9);
-    height: 60px;
-    background-color: #041414;
-    overflow: hidden;
-    color: #a2c2b5;   
+#nav-cont {
+  position: relative;
+  z-index: 10000;
+  background-color: rgba(19, 36, 19, 0.9);
+  height: 60px;
+  background-color: #041414;
+  overflow: visible;
+  color: #a2c2b5;
 }
-.nav-logo{
-    height: 50px;
+.nav-logo {
+  height: 50px;
 }
-#nav-item2{
-    color: #a2c2b5;   
+#nav-item2 {
+  color: #a2c2b5;
 }
-.active{
-    color: white !important;
+.active {
+  color: white !important;
 }
-#basic-navbar-nav{
-    text-align: center;
+#basic-navbar-nav {
+  text-align: center;
 }
 
-.dropdown-menu-show{
-    position: absolute;
-    z-index: 100;
+.dropdown-menu-show {
+  position: absolute;
+  z-index: 100;
+}
+
+.nav-toggle {
+  background-color: #041414;
 }
