@@ -2,6 +2,7 @@ import React from "react";
 import "./Team.css";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { HiEnvelope } from "react-icons/hi2";
+import { cc } from './cc.js';
 import Utkarsh from "../../assets/team/Utkarsh.png";
 import Ishita from "../../assets/team/Ishita.jpeg";
 import Arnav from "../../assets/team/Arnav.jpeg";
@@ -133,7 +134,7 @@ export default function Team() {
       email: "trishajaipuriark32002@gmail.com",
       linkedin: "https://www.linkedin.com/in/trisha-jaipuriar-82877b217/",
     },
-        {
+    {
       name: "Sujal Ranjan",
       img: Sujal,
       designation: "Frontend Developer",
@@ -222,8 +223,25 @@ export default function Team() {
         ))}
       </div>
       <div className="team-subtitle">Core Committee</div>
-      <div className="">
+      <div className="cc-container">
+        <div>
 
+          {cc.map((name) => cc.indexOf(name) % 3 == 0 &&
+            <div className="name">{name}</div>
+          )}
+        </div>
+        <div>
+
+          {cc.map((name) => cc.indexOf(name) % 3 == 1 &&
+            <div className="name">{name}</div>
+          )}
+        </div>
+        <div>
+
+          {cc.map((name) => cc.indexOf(name) % 3 == 2 &&
+            <div className="name">{name}</div>
+          )}
+        </div>
       </div>
     </div>
   );

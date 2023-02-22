@@ -132,8 +132,31 @@
   cursor: pointer;
 }
 
+
+
+.cc-container{
+  font-size: 1.2rem;
+  margin: 0.25rem;
+  color: #a2c2b5;
+  font-weight: 600;
+  display: table;
+  column-count: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: -5rem;
+  text-align: center;
+}
+
+.name{
+  line-height: 200%;
+}
 @media (max-width: 768px) {
   .team-title {
     font-size: 2.5rem;
+  }
+  .cc-container{
+    flex-direction: column;
+    margin-top: -6rem;
   }
 }
