@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import vision from "../../assets/vision.gif";
 import mission from "../../assets/mission.gif";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export default function About() {
   return (
@@ -9,31 +11,40 @@ export default function About() {
       <div className="about-title">About Us</div>
       <div className="about-box1">
         <div className="vision text-box">
-          <div className="about-title2">VISION</div>
+          <div className="about-title2">VISION and MISSON</div>
           <img src={vision} className="about-gif1" />
 
           <div className="about-content">
-            The vision of moss is to Spread awarness about open source amongst
-            students by conducting workshops and events which will help in
-            building a large community and finding the exact target audience who
-            might take this open source society upto a next level and we hope
-            that a lot of one’s get benifitted by this in future.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur fermentum, nulla sed aliquam pretium, quam odio
+            finibus risus, quis mollis mauris velit eleifend dolor.
+            Praesent suscipit, felis porta suscipit semper, lacus sem pharetra
+            eros, in volutpat enim nunc eget odio. Nunc id faucibus urna,
+            sed interdum augue. In feugiat pharetra tincidunt. Integer id
+            lobortis est. Morbi ut elementum lectus, sit amet porttitor tellus.
+            Nulla laoreet elementum erat ac ultricies. Quisque.
+
+
           </div>
         </div>
       </div>
 
       <div className="about-box1">
-        <div className="mission text-box">
-          <div className="about-title2">MISSION</div>
-          <img src={mission} className="about-gif2" />
+        <Carousel
+          autoPlay={true}
+          centerMode={true}
+          interval={1000}
+          showArrows={true}
+          showIndicators={true}
+          stopOnHover={true}
+          infiniteLoop={true}
+        >
+          <div className="about-carousel">Card 1</div>
+          <div className="about-carousel">Card 2</div>
+          <div className="about-carousel">Card 3</div>
+          <div className="about-carousel">Card 4</div>
 
-          <div className="about-content">
-            Moss's Mission is to spread awareness and information about the open
-            source society. The promise of open source society, is higher
-            quality, better reliability, greater flexibility, lower cost. Also
-            developing and contributing to the amazing field of open source.
-          </div>
-        </div>
+        </Carousel>
       </div>
     </div>
   );

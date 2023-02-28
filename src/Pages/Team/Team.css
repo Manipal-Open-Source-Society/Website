@@ -157,6 +157,7 @@
   }
   .cc-container{
     flex-direction: column;
-    margin-top: -6rem;
+    margin-top: -6
+    rem;
   }
 }

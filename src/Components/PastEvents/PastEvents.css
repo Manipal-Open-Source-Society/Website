@@ -3,7 +3,7 @@
   background-color: #a2c2b5;
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .events-title {
@@ -12,7 +12,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   padding-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   text-transform: uppercase;
   background: linear-gradient(
     to right,
@@ -62,12 +62,85 @@
 
   animation: shine 1.2s linear infinite;
 }
+.events-carousel-container{
+  height: 70vh;
+  width: 95vw;
+  margin: auto;
+  margin-top: -2rem;
+  background-color: rgb(4, 21, 21, 0.8);
+  background: transparent;
+  
+}
+.events-carousel{
+  height: 75vh;
+  background-color: rgb(4, 21, 21, 0.8);
+  padding: 1rem;
+  margin: 0rem 4rem;
+  width: 75vw;
+}
+.event-title{
+  color: #a2c2b5;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.event-date{
+  color: #a2c2b5;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
 
+.event-carousel-box{
+  margin-top: 2rem;
+}
+a{
+  color: #a2c2b5;
+  text-decoration: none;
+}
+.event-card-carousel{
+  width: 95%;
+  margin-left: 2.5%;
+  height: 45vh;
+  background-color: rgb(162, 194, 181, 0.4);
+}
+
+.events-card-left, .events-card-right{
+  display: inline-block;
+  width: 50%;
+  height: 60vh;
+  vertical-align: top;
+  
+}
+.events-card-left{
+  width: 65%;
+  padding: 0rem 2rem;
+  text-align: center;
+}
+.events-card-right{
+  color: #a2c2b5;
+  text-align: justify;
+  font-size: 1.1rem;
+  width: 35%;
+  padding: 1rem;
+  padding-right: 1.5rem;
+}
+.events-carousel{
+  height: auto;
+}
 @media (max-width: 768px) {
   .events-title2 {
     font-size: 3rem;
   }
 
+  .events-card-left, .events-card-right{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+  }
+  .event-card-carousel{
+    height: 30vh;
+  }
   .events-title {
     font-size: 2.5rem;
   }

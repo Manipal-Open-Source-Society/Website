@@ -1,4 +1,4 @@
-export const cc=[
+export const cc = [
     "Aryan Makhija",
     "Tashmit Verma",
     "Kaushal Singh",
@@ -51,5 +51,15 @@ export const cc=[
     "Vittal Prabhu",
     "Anika Kauk",
     "tisha",
-    "Diya Nair"
+    "Diya Nair",
+    "Sujal Ranjan",
+    "Radhesh Pai",
+    "Navya Jain",
+    "Nikita Malik",
+    "Kumud Rathore",
+    "Ishan Parashar",
+    "Aditi Sarraf",
+    "Adruti Onam",
+    "Prerna Mittal",
+    "Vikas"
 ]

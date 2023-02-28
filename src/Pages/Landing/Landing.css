@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
-.home_box {
-  background-color: black;
+
+
+#binary-canvas {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+}
+.home_box{
+  width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden !important;
+  background-color: black;
 }
 
 .landing-logo {
@@ -21,10 +30,6 @@
   font-weight: 800;
   font-family: "Philosopher", sans-serif;
   font-size: 2.5rem;
-}
-
-#binary-canvas {
-  opacity: 0.7;
 }
 
 .home-btn {
@@ -46,7 +51,7 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
-  text-align: center;
+  overflow-y: hidden;
 }
 .landing-title {
   color: rgba(255, 255, 255, 0.808);
@@ -57,10 +62,10 @@
   position: absolute;
   padding-left: 1rem;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 8rem;
 }
 .title-img {
-  width: 15rem;
+  width: 13rem;
   display: block;
   margin: 0rem 1rem;
 }
@@ -74,7 +79,8 @@
 }
 
 #img-s2 {
-  transform: translate(5%, -120%);
+  transform: translate(5%, 0);
+  margin-top: -12rem;
 }
 
 .landing-div {
@@ -110,16 +116,28 @@
   }
 }
 
+.landing-mobile{
+  display: none;
+}
 @media (max-width: 768px) {
+  
   .home_box {
     position: relative;
     display: flex;
     flex-direction: column;
   }
-
+.mobile-logo{
+  width: 60vw;
+}
   .title-img {
     width: 5rem;
     position: absolute;
+  }
+  .landing-mobile{
+    display: block;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .landing-title {
@@ -128,6 +146,7 @@
     justify-content: center;
     position: relative;
     padding-left: 0rem;
+    display: none;
   }
 
   .images {
@@ -153,17 +172,48 @@
   }
 
   .landing-div {
-    position: relative;
+   text-align: center;
+   width: 80vw;
+   margin-left: 30vw;
+  position: relative;
+  top: 0;
+  }
+
+ 
+  .btn_bg{
     height: 30vh;
-    top: 1rem;
-    right: -4.5rem;
   }
 
   .arrow {
     height: 15vh;
     width: 15vh;
-    position: absolute;
-    right: -12.7rem;
-    top: -1rem;
+    position: relative;
+    border: none;
+    z-index: 10;
+    transition: 0.5s;
+    transform: translateY(-150%);
   }
+  
+  .arrow:hover {
+    transform: translateY(-150%) scale(1);
+  }
+
+  .landing-mobile-title{
+    font-size: 6.5vw;
+    color: white;
+    font-weight: 700;
+    margin-top: -2rem;
+  }
+  #binary-canvas {
+    opacity: 0.7;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .home_box{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
 }

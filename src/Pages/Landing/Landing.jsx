@@ -8,7 +8,7 @@ import l3 from "../../assets/3.png";
 import l4 from "../../assets/4.png";
 import btn_bg from "../../assets/btn_bg.png";
 import arrow from "../../assets/arrow.png";
-
+import mobileLogo from '../../assets/moss_mobile.png'
 export default function Landing() {
   useEffect(() => {
     const canvas = document.getElementById("binary-canvas");
@@ -79,7 +79,6 @@ export default function Landing() {
   }, []);
   var i = 0;
   const changeColour = (i) => {
-    // const arr = ['#2aa536', '#122914', '#246d6d']
     const arr = ["#68a977b1", "#2e4f30e3", "#43dc5094"];
     const canvas = document.getElementById("binary-canvas");
     const ctx = canvas.getContext("2d");
@@ -95,7 +94,7 @@ export default function Landing() {
   }, 2000);
 
   return (
-    <>
+    <div className="landing-container">
       <img src={logo} className="landing-logo" />
       <div className="home_box">
         <canvas id="binary-canvas" style={{ zIndex: 3, position: "fixed" }} />
@@ -113,6 +112,14 @@ export default function Landing() {
             <img src={l4} className="title-img" id="img-s2" />
           </div>
         </div>
+        <div className="landing-mobile">
+        <div>
+          <img src={mobileLogo} className="mobile-logo"/>
+        </div>
+        <div className="landing-mobile-title">
+          Manipal Open Source Society
+        </div>
+        </div>
         <div className="landing-div">
           <img src={btn_bg} className={"btn_bg"} />
           <a href="/home">
@@ -120,6 +127,6 @@ export default function Landing() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
