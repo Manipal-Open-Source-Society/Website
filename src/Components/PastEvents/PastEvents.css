@@ -25,7 +25,6 @@
 
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -56,67 +55,65 @@
 
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   animation: shine 1.2s linear infinite;
 }
-.events-carousel-container{
-  height: 70vh;
+.events-carousel-container {
+  height: 100vh;
   width: 95vw;
   margin: auto;
-  margin-top: -2rem;
   background-color: rgb(4, 21, 21, 0.8);
   background: transparent;
-  
+  margin-top: -3rem;
 }
-.events-carousel{
+.events-carousel {
   height: 75vh;
   background-color: rgb(4, 21, 21, 0.8);
   padding: 1rem;
-  margin: 0rem 4rem;
-  width: 75vw;
+  width: 80vw;
+  margin-left: 8vw;
+  text-align: center;
 }
-.event-title{
+.event-title {
   color: #a2c2b5;
   font-size: 2rem;
   font-weight: 700;
 }
-.event-date{
+.event-date {
   color: #a2c2b5;
   font-size: 1.2rem;
   font-style: italic;
   margin-top: 0.5rem;
 }
 
-.event-carousel-box{
+.event-carousel-box {
   margin-top: 2rem;
 }
-a{
+.events-ind-car-im {
+  transform: scale(0.8) translateY(-20px);
+}
+a {
   color: #a2c2b5;
   text-decoration: none;
 }
-.event-card-carousel{
-  width: 95%;
-  margin-left: 2.5%;
-  height: 45vh;
-  background-color: rgb(162, 194, 181, 0.4);
+.event-card-carousel {
 }
 
-.events-card-left, .events-card-right{
+.events-card-left,
+.events-card-right {
   display: inline-block;
   width: 50%;
   height: 60vh;
   vertical-align: top;
-  
 }
-.events-card-left{
+.events-card-left {
   width: 65%;
   padding: 0rem 2rem;
   text-align: center;
 }
-.events-card-right{
+.events-card-right {
   color: #a2c2b5;
   text-align: justify;
   font-size: 1.1rem;
@@ -124,21 +121,43 @@ a{
   padding: 1rem;
   padding-right: 1.5rem;
 }
-.events-carousel{
+.events-carousel {
   height: auto;
+}
+#events-car {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  text-align: center;
+}
+
+#events-car .carousel-control-next {
+  transform: translateY(-50px) scale(1.5);
+}
+#events-car .carousel-control-prev {
+  transform: translate(-50px, -50px) scale(1.5);
+}
+
+#individal-car .carousel-control-prev,
+#individal-car .carousel-control-next {
+  display: none;
+}
+
+#individal-car .carousel-indicators {
+  display: none;
 }
 @media (max-width: 768px) {
   .events-title2 {
     font-size: 3rem;
   }
 
-  .events-card-left, .events-card-right{
+  .events-card-left,
+  .events-card-right {
     display: block;
     width: 100%;
     height: auto;
-    
   }
-  .event-card-carousel{
+  .event-card-carousel {
     height: 30vh;
   }
   .events-title {

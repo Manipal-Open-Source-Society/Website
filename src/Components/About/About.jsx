@@ -1,9 +1,16 @@
 import React from "react";
 import "./About.css";
+import Carousel from 'react-bootstrap/Carousel';
+
 import vision from "../../assets/vision.gif";
 import mission from "../../assets/mission.gif";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import about1 from "../../assets/about/about1.jpg";
+import about2 from "../../assets/about/about2.jpg";
+import about3 from "../../assets/about/about3.jpg";
+import about4 from "../../assets/about/about4.jpg";
+import about5 from "../../assets/about/about5.jpg";
+import about6 from "../../assets/about/about6.jpg";
 
 export default function About() {
   return (
@@ -15,36 +22,77 @@ export default function About() {
           <img src={vision} className="about-gif1" />
 
           <div className="about-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur fermentum, nulla sed aliquam pretium, quam odio
-            finibus risus, quis mollis mauris velit eleifend dolor.
-            Praesent suscipit, felis porta suscipit semper, lacus sem pharetra
-            eros, in volutpat enim nunc eget odio. Nunc id faucibus urna,
-            sed interdum augue. In feugiat pharetra tincidunt. Integer id
-            lobortis est. Morbi ut elementum lectus, sit amet porttitor tellus.
-            Nulla laoreet elementum erat ac ultricies. Quisque.
-
-
+            Manipal Open Source Society is the first official open source club of MIT, Manipal.
+            Formed with the vision to revive the dwindling FOSS culture in the college, the main
+            aim of the club is to spread awareness about Open source through the lenses of
+            lenses of Software Development, Machine Learning, Artificial Intelligence,
+            Cloud Computing, Computer Graphics, Cybersecurity, Robotics and much more.
+            We conduct a events throughout the year helping our community members to get
+            acquainted with the different aspects of open source through workshops, speaker
+            events, webinars and projects.
           </div>
         </div>
       </div>
 
       <div className="about-box1">
-        <Carousel
-          autoPlay={true}
-          centerMode={true}
-          interval={1000}
-          showArrows={true}
-          showIndicators={true}
-          stopOnHover={true}
-          infiniteLoop={true}
-        >
-          <div className="about-carousel">Card 1</div>
-          <div className="about-carousel">Card 2</div>
-          <div className="about-carousel">Card 3</div>
-          <div className="about-carousel">Card 4</div>
 
+
+        <Carousel fade interval={1000} indicators={true}>
+          <Carousel.Item className="about-car">
+            <img
+              className="d-block w-100"
+              src={about1}
+              alt="First slide"
+            />
+
+          </Carousel.Item>
+          <Carousel.Item className="about-car">
+            <img
+              className="d-block w-100"
+              src={about2}
+              alt="Second slide"
+            />
+
+          </Carousel.Item>
+          <Carousel.Item className="about-car">
+            <img
+              className="d-block w-100 about-car-im"
+              src={about3}
+              alt="Third slide"
+            />
+
+
+          </Carousel.Item>
+          <Carousel.Item className="about-car">
+            <img
+              className="d-block w-100 about-car-im"
+              src={about4}
+              alt="Third slide"
+            />
+
+
+
+          </Carousel.Item>
+          {/* <Carousel.Item className="about-car">
+        <img
+          className="d-block w-100 about-car-im"
+          src={about5}
+          alt="Third slide"
+        />
+
+      
+      </Carousel.Item> */}
+          <Carousel.Item className="about-car">
+            <img
+              className="d-block w-100 about-car-im"
+              src={about6}
+              alt="Third slide"
+            />
+
+
+          </Carousel.Item>
         </Carousel>
+
       </div>
     </div>
   );
