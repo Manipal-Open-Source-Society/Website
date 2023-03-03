@@ -16,9 +16,11 @@ export default function About() {
   return (
     <div className="about-container" id="about">
       <div className="about-title">About Us</div>
+      <div className="ab-cont">
+
       <div className="about-box1">
         <div className="vision text-box">
-          <div className="about-title2">VISION and MISSON</div>
+          {/* <div className="about-title2">VISION and MISSON</div> */}
           <img src={vision} className="about-gif1" />
 
           <div className="about-content">
@@ -93,6 +95,7 @@ export default function About() {
           </Carousel.Item>
         </Carousel>
 
+      </div>
       </div>
     </div>
   );

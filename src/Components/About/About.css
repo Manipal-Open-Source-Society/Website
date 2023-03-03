@@ -59,6 +59,7 @@
 .carousel{
   height: 25rem;
 }
+
 .about-title2 {
   color: #a2c2b5;
   font-weight: 700;
@@ -148,7 +149,7 @@
   }
   .about-car {
     width: 100%;
-    height: 70vw;
+    height: 50vw;
     overflow: hidden;
   }
   .about-car img{
@@ -158,6 +159,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+  }
+
+  .ab-cont{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
   }
 
   .about-content {
@@ -165,6 +173,7 @@
     line-height: 160%;
     width: 100%;
     margin: auto;
+    margin-top: -2rem;
   }
 
 
