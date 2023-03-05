@@ -195,7 +195,7 @@
 
 @media (max-width: 768px) {
   .contact-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .contact-container {
@@ -203,17 +203,20 @@
     flex-direction: column;
   }
   .contact-h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     width: 80vw;
   }
+
   .next-btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-right: auto;
   }
 
   .robot-gif {
-    top: 15vh;
-    left: 14vw;
+    top: 19vh;
+    left: 24.5vw;
+
+    width: 12rem;
   }
 
   .icon-container {
@@ -227,7 +230,7 @@
   #c1 {
     position: relative;
     width: 30vh;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     top: 15vh;
   }
 
@@ -236,7 +239,7 @@
     position: relative;
 
     width: 40vh;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     top: 10vh;
   }
 
@@ -254,14 +257,18 @@
   }
 
   .ty-robot {
-    width: 15rem;
+    width: 12rem;
     margin-left: 50%;
     transform: translateX(-50%);
     padding-top: 10vh;
   }
 
   .contact-h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     width: 80vw;
+  }
+
+  .ty {
+    margin: auto;
   }
 }
