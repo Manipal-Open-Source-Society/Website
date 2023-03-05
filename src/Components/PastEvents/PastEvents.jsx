@@ -14,7 +14,7 @@ import p3 from '../../assets/events/p3.jpeg'
 export default function PastEvents() {
   return (
     <div className="events-container" id="events-car">
-      <div className="events-title">Our Past Events</div>
+      <div className="events-title" id="events">Our Past Events</div>
       <div className="events-carousel-container">
         <Carousel id="events-car" interval={6000}>
           <Carousel.Item>
@@ -121,16 +121,15 @@ export default function PastEvents() {
                   </Carousel>
                 </div>
                 <div className="events-card-right">
-                  Perceptron was a
-                  <b>
-                    {" "}
-                    week long Introduction to ML and Computer Vision workshop
-                  </b>
-                  . Starting with python fundamentals required for machine
-                  learning, we covered libraries like Numpy, Pandas then we
-                  moved onto Basic of Neural Networks and then CNNs. Lastly we
-                  covered Computer Vision specifically OpenCV Library
-                </div>
+                  <b>Perceptron</b> was a one-week workshop designed to introduce
+                  participants to the concepts of machine learning and computer vision.
+                  The workshop started with the basics of Python required for machine
+                  learning and then covered libraries such as NumPy and Pandas.
+                  Participants were then introduced to the basics of neural networks,
+                  convolutional neural networks, and computer vision using the OpenCV
+                  library. By the end of the workshop, participants had acquired a
+                  solid foundation in these areas, enabling them to develop basic
+                  computer vision projects using Python.</div>
               </div>
             </div>
           </Carousel.Item>

@@ -34,7 +34,32 @@ export default function Contact() {
       }, 5000);
     }
   }, [count]);
+  const handleKeyDown = (e) => {
+    if (count == 1) {
+      if (name) {
+        if (e.key === 'Enter') {
+          updateCount(count)
+        }
+      }
 
+    }
+    if (count == 2) {
+      if (email) {
+        if (e.key === 'Enter') {
+          updateCount(count)
+        }
+      }
+
+    }
+    if (count == 3) {
+      if (msg) {
+        if (e.key === 'Enter') {
+          updateCount(count)
+        }
+      }
+
+    }
+  }
   return (
     <div id="contact" className="contact-container">
       {count == 0 && <div className="contact-title">Contact Us</div>}
@@ -44,34 +69,54 @@ export default function Contact() {
         </div>
       )}
       {count == 1 && (
-        <div className="contact-h" id={"c1"}>
-          Please Tell Us Your Name
-          <input
-            placeholder=""
-            onChange={(e) => setName(e.target.value)}
-            className="c-form-inp"
-          ></input>
-        </div>
+        <>
+
+          <div className="contact-h" id={"c1"}>
+            Please Tell Us Your Name
+          </div>
+          <div>
+            <input
+              placeholder=""
+              onChange={(e) => setName(e.target.value)}
+              className="c-form-inp"
+              onKeyDown={(e) => { handleKeyDown(e) }}
+            ></input>
+          </div>
+        </>
       )}
       {count == 2 && (
-        <div className="contact-h" id={"c2"}>
-          Hi {name}, could you please provide your email address
-          <input
-            placeholder=""
-            onChange={(e) => setEmail(e.target.value)}
-            className="c-form-inp"
-          ></input>
-        </div>
+        <>
+          <div className="contact-h" id={"c2"}>
+            Hi {name}, could you please provide your email address
+          </div>
+          <div>
+            <input
+              placeholder=""
+              onChange={(e) => setEmail(e.target.value)}
+              className="c-form-inp"
+              onKeyDown={(e) => { handleKeyDown(e) }}
+
+            ></input>
+          </div>
+        </>
+
       )}
       {count == 3 && (
-        <div className="contact-h" id={"c3"}>
-          What would you like to talk to us regarding?
-          <input
-            placeholder=""
-            onChange={(e) => setMsg(e.target.value)}
-            className="c-form-inp"
-          ></input>
-        </div>
+        <>
+
+          <div className="contact-h" id={"c3"}>
+            What would you like to talk to us regarding?
+          </div>
+          <div>
+            <input
+              placeholder=""
+              onChange={(e) => setMsg(e.target.value)}
+              className="c-form-inp"
+              onKeyDown={(e) => { handleKeyDown(e) }}
+            ></input>
+          </div>
+        </>
+
       )}
       {count == 4 && (
         <div className="ty">
@@ -81,7 +126,7 @@ export default function Contact() {
           </div>
         </div>
       )}
-      <div className="">
+      <div>
         {count == 0 && (
           <button
             className="next-btn"
@@ -92,26 +137,45 @@ export default function Contact() {
             NEXT >
           </button>
         )}
-        {count > 0 && count < 3 && (
-          <button
-            className="next-btn-2"
-            id="btn-id"
-            onClick={() => updateCount(count)}
-          >
-            <AiOutlineDoubleRight className="dr" />
-          </button>
+        {count == 1 && (
+
+          <div>
+
+            <button
+              className="next-btn-2"
+              id="btn-id"
+              onClick={() => updateCount(count)}
+            >
+              <AiOutlineDoubleRight className="dr" />
+            </button>
+          </div>
+        )}
+        {count == 2 && (
+
+          <div>
+
+            <button
+              className="next-btn-2"
+              id="btn-id"
+              onClick={() => updateCount(count)}
+            >
+              <AiOutlineDoubleRight className="dr" />
+            </button>
+          </div>
         )}
         {count == 3 && (
-          <button
-            className="next-btn-2"
-            id="btn-id"
-            onClick={() => updateCount(count)}
-          >
-            <TiTick className="dr" />
-          </button>
+          <div>
+
+            <button
+              className="next-btn-2"
+              id="btn-id"
+              onClick={() => updateCount(count)}
+            >
+              <TiTick className="dr" />
+            </button>
+          </div>
         )}
         {count != 4 && <img src={robot} className="robot-gif" />}
-        {/* {count ==4 &&} */}
       </div>
       <div className="icon-container">
         <a

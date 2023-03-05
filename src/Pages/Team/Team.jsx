@@ -3,6 +3,7 @@ import "./Team.css";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { HiEnvelope } from "react-icons/hi2";
 import { cc } from './cc.js';
+import mission from "../../assets/mission.gif";
 import Utkarsh from "../../assets/team/Utkarsh.png";
 import Ishita from "../../assets/team/Ishita.jpeg";
 import Arnav from "../../assets/team/Arnav.jpeg";
@@ -21,15 +22,6 @@ import TopNav from "../../Components/Navbar/Navbar";
 export default function Team() {
   const members = [
     {
-      name: "Utkarsh Anand",
-      img: Utkarsh,
-      designation: "Executive",
-      github: "https://github.com/utkarshanand140",
-      email: "utkarshanand221@gmail.com",
-      linkedin: "https://www.linkedin.com/in/utkarsh-anand-93260617b/",
-    },
-
-    {
       name: "Ishita Saha",
       img: Ishita,
       designation: "Founder and Executive Lead",
@@ -37,12 +29,18 @@ export default function Team() {
       email: "ishitasaha3002@gmail.com",
       linkedin: "https://www.linkedin.com/in/ishita-saha-07574b1b8/?originalSubdomain=in",
     },
-
-
+    {
+      name: "Utkarsh Anand",
+      img: Utkarsh,
+      designation: "Executive Lead",
+      github: "https://github.com/utkarshanand140",
+      email: "utkarshanand221@gmail.com",
+      linkedin: "https://www.linkedin.com/in/utkarsh-anand-93260617b/",
+    },
     {
       name: "Shourya Gupta",
       img: Shourya,
-      designation: "Open Source Moderator and Executive Lead",
+      designation: "Executive Lead",
       github: "https://github.com/shourya2002-geek",
       email: "13.shourya@gmail.com",
       linkedin: "https://www.linkedin.com/in/shourya-gupta-80237b1b9/",
@@ -172,31 +170,7 @@ export default function Team() {
           </div>
         ))}
       </div>
-      <div className="team-subtitle">Founders</div>
-      <div className="teamC">
-        {founders.map((person) => (
-          <div className="team-card">
-            <div className="img-container">
-              <img src={person.img} className="team-img" />
-            </div>
-            <div className="team-content">
-              <div className="team-name">{person.name}</div>
-              <div className="team-desig">{person.designation}</div>
-              <div className="team-icon-cont">
-                <a href={person.linkedin}>
-                  <AiFillLinkedin className="team-icon" />
-                </a>
-                <a href={`mailto:${person.email}`}>
-                  <HiEnvelope className="team-icon" />
-                </a>
-                <a href={person.github}>
-                  <AiFillGithub className="team-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+     
       <div className="team-subtitle">Website Team</div>
       <div className="teamC">
         {website.map((person) => (
@@ -224,6 +198,7 @@ export default function Team() {
       </div>
       <div className="team-subtitle">Core Committee</div>
       <div className="cc-container">
+      <img src={mission} className="cc-bg"/>
         <div>
 
           {cc.map((name) => cc.indexOf(name) % 3 == 0 &&

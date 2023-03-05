@@ -7,7 +7,9 @@ import l2 from "../../assets/2.png";
 import l3 from "../../assets/3.png";
 import l4 from "../../assets/4.png";
 import btn_bg from "../../assets/btn_bg.png";
-import arrow from "../../assets/arrow.png";
+// import arrow from "../../assets/arrow.png";
+import arrow from "../../assets/arrow2.png";
+
 import mobileLogo from '../../assets/moss_mobile.png'
 export default function Landing() {
   useEffect(() => {

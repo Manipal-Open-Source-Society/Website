@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500&display=swap');
 
 
 #binary-canvas {
@@ -98,17 +99,18 @@
 }
 
 .arrow {
-  height: 40vh;
-  width: 40vh;
+  height: 45vh;
+  width: 45vh;
   position: absolute;
   border: none;
   z-index: 10;
-  transform: translate(-50vh, 10vh);
+  transform: translate(-52.5vh, 7.5vh);
   transition: 0.5s;
+  border-radius: 50%;
 }
 
 .arrow:hover {
-  transform: translate(-50vh, 10vh) scale(1.05);
+  transform: translate(-52.5vh, 7.5vh) scale(1.1);
 }
 @keyframes rotate {
   0% {
@@ -128,6 +130,9 @@
   }
 .mobile-logo{
   width: 60vw;
+  position: relative;
+  z-index: 10;
+  margin-top: 10vw;
 }
   .title-img {
     width: 5rem;
@@ -176,6 +181,7 @@
    width: 80vw;
    margin-left: 30vw;
   position: relative;
+  margin-top: 10vw;
   top: 0;
   }
 
@@ -199,10 +205,13 @@
   }
 
   .landing-mobile-title{
-    font-size: 6.5vw;
+    font-size: 7.5vw;
     color: white;
     font-weight: 700;
     margin-top: -2rem;
+    font-family: 'Genos', sans-serif;
+    position: relative;
+    z-index: 10;
   }
   #binary-canvas {
     opacity: 0.7;

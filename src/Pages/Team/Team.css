@@ -24,7 +24,6 @@
   background-size: 200% auto;
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 1.8s linear infinite;
@@ -48,7 +47,6 @@
   background-size: 200% auto;
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 1.8s linear infinite;
@@ -140,6 +138,7 @@
   color: #a2c2b5;
   font-weight: 600;
   display: table;
+  position: relative;
   column-count: 3;
   display: flex;
   flex-direction: row;
@@ -150,6 +149,18 @@
 
 .name{
   line-height: 200%;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 10;
+}
+.cc-bg{
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+
+  top: 10vw;
+  width: 30vw;
+  opacity: 0.2;
 }
 @media (max-width: 768px) {
   .team-title {
@@ -159,5 +170,8 @@
     flex-direction: column;
     margin-top: -6
     rem;
+  }
+  .cc-bg{
+    display: none;
   }
 }

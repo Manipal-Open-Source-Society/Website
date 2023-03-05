@@ -78,7 +78,7 @@
   opacity: 0.2;
   width: 20vw;
   position: absolute;
-  top: 30vh;
+  top: 25vh;
   left: -22vw;
 }
 
@@ -187,9 +187,9 @@
 
   .about-gif1 {
     position: absolute;
-    margin-top: -16.5rem;
-    margin-left: 87%;
-    width: 100%;
+    margin-top: -17rem;
+    margin-left: 84%;
+    width: 80%;
   }
 
   .about-gif2 {

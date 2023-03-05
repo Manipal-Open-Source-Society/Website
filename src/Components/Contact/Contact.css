@@ -26,10 +26,8 @@
 
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   animation: shine 1.8s linear infinite;
 }
 @keyframes shine {
@@ -44,7 +42,6 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 800;
-  font-family: "Times New Roman", Times, serif;
   font-family: "Source Code Pro", monospace;
   margin-top: 42vh;
 }
@@ -56,7 +53,6 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 800;
-  font-family: "Times New Roman", Times, serif;
   font-family: "Source Code Pro", monospace;
   margin-top: 35vh;
 }
@@ -68,7 +64,6 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 800;
-  font-family: "Times New Roman", Times, serif;
   font-family: "Source Code Pro", monospace;
   margin-top: 0vh;
 }
@@ -95,16 +90,12 @@
   border: none;
   width: 3rem;
   height: 3rem;
-  border-radius: 20px;
   color: #041414;
-  overflow-x: hidden;
   background-color: #a2c2b5;
-  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
-  margin-left: 80%;
   font-size: 1.5rem;
   border-radius: 50%;
-  transform: translate(-85px, -40px);
+  transform: translate(75vw, -100%);
 }
 
 .dr {
@@ -116,10 +107,11 @@
   background-color: transparent;
   border: none;
   color: #a2c2b5;
-  width: 100%;
   border-bottom: 1px solid #a2c2b5;
   font-size: 2rem;
-  width: 80%;
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 2rem;
 }
 .c-form-inp::placeholder {
   font-weight: 900;
@@ -190,7 +182,7 @@
 
 .next-btn-2:hover {
   cursor: pointer;
-  transform: scale(1.05) translate(-85px, -40px);
+  transform: scale(1.05) translate(72vw, -100%);
 }
 
 @media (max-width: 768px) {
@@ -199,12 +191,15 @@
   }
 
   .contact-container {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
   .contact-h3 {
     font-size: 1.4rem;
     width: 80vw;
+    margin-top: 30vh;
+    margin-bottom: 2rem;
   }
 
   .next-btn {
@@ -213,16 +208,16 @@
   }
 
   .robot-gif {
-    top: 19vh;
-    left: 24.5vw;
+    top: 14vh;
+    left: 50vw;
+    transform: translateX(-50%);
 
-    width: 12rem;
+    width: 15rem;
   }
 
   .icon-container {
     flex-direction: row;
     top: 90%;
-    /* right: 90px; */
     width: 75vw;
     margin: auto;
   }
@@ -233,7 +228,7 @@
     font-size: 1.3rem;
     top: 15vh;
   }
-
+  #c1,
   #c2,
   #c3 {
     position: relative;
@@ -242,18 +237,29 @@
     font-size: 1.3rem;
     top: 10vh;
   }
-
   .next-btn-2 {
-    width: 5vh;
-    height: 5vh;
-    position: relative;
-    right: -3rem;
-    top: 4.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 30vh;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    color: #041414;
+    background-color: #a2c2b5;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transform: translate(45vw, 50%);
   }
+  .next-btn-2:hover{
+    transform: translate(45vw, 50%);
 
+  }
   .c-form-inp {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 10rem;
+    width: 80%;
+    margin-left: 10%;
   }
 
   .ty-robot {
@@ -262,6 +268,16 @@
     transform: translateX(-50%);
     padding-top: 10vh;
   }
+.contact-h {
+  font-size: 2.2rem;
+  width: 52vw;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-family: "Source Code Pro", monospace;
+  margin-top: 32vh;
+}
 
   .contact-h2 {
     font-size: 1.3rem;
@@ -270,5 +286,6 @@
 
   .ty {
     margin: auto;
+    margin-top: 8rem;
   }
 }

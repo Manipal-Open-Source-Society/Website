@@ -44,7 +44,7 @@ export const cc = [
     "Peehu Yadav",
     "Prashast Saxena",
     "Shivli Mathur",
-    "SHASHANK S NAYAK",
+    "Shashank S Nayak",
     "Anushri Viraj Sakhardande",
     "Archit Agarwal",
     "Akshat singh",

@@ -3,7 +3,6 @@ import "./About.css";
 import Carousel from 'react-bootstrap/Carousel';
 
 import vision from "../../assets/vision.gif";
-import mission from "../../assets/mission.gif";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import about1 from "../../assets/about/about1.jpg";
 import about2 from "../../assets/about/about2.jpg";
