@@ -5,7 +5,7 @@ import {
   AiFillLinkedin,
   AiFillInstagram,
 } from "react-icons/ai";
-import {BsMedium} from 'react-icons/bs';
+import { BsMedium } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 import robot from "../../assets/robot.gif";
@@ -74,12 +74,12 @@ export default function Contact() {
         </div>
       )}
       {count == 4 && (
-        <>
+        <div className="ty">
           <img src={tyRobot} className="ty-robot" id={"c4"} />
           <div className="contact-h2">
             We have recieved your message, will get back to you shortly.
           </div>
-        </>
+        </div>
       )}
       <div className="">
         {count == 0 && (
@@ -114,18 +114,20 @@ export default function Contact() {
         {/* {count ==4 &&} */}
       </div>
       <div className="icon-container">
-      <a href="https://www.linkedin.com/company/manipal-open-source-society/" target={'_blank'}>
-        <AiFillLinkedin className="contact-icon" />
+        <a
+          href="https://www.linkedin.com/company/manipal-open-source-society/"
+          target={"_blank"}
+        >
+          <AiFillLinkedin className="contact-icon" />
         </a>
-      <a href="https://www.instagram.com/moss.manipal/" target={'_blank'}>
-
-        <AiFillInstagram className="contact-icon" />
+        <a href="https://www.instagram.com/moss.manipal/" target={"_blank"}>
+          <AiFillInstagram className="contact-icon" />
         </a>
         <a href="mailto:mossmanipal@gmail.com" target="_top">
-        <MdEmail className="contact-icon" />
+          <MdEmail className="contact-icon" />
         </a>
         <a href="https://medium.com/@mossmanipal" target="_blank">
-        <BsMedium className="contact-icon" />
+          <BsMedium className="contact-icon" />
         </a>
       </div>
     </div>
