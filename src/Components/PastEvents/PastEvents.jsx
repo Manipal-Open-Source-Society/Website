@@ -16,7 +16,7 @@ export default function PastEvents() {
     <div className="events-container" id="events-car">
       <div className="events-title" id="events">Our Past Events</div>
       <div className="events-carousel-container">
-        <Carousel id="events-car" interval={6000}>
+        <Carousel id="events-car" interval={100000}>
           <Carousel.Item>
             <div className="events-carousel">
               <div className="event-title">Gateway To Open Source</div>

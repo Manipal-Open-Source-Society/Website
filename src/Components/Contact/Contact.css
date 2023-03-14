@@ -188,6 +188,8 @@
 @media (max-width: 768px) {
   .contact-title {
     font-size: 2rem;
+    margin-top: 0;
+    transform: translateY(-40%);
   }
 
   .contact-container {
@@ -196,8 +198,8 @@
     flex-direction: column;
   }
   .contact-h3 {
-    font-size: 1.4rem;
-    width: 80vw;
+    font-size: 1.25rem;
+    width: 100vw;
     margin-top: 30vh;
     margin-bottom: 2rem;
   }
@@ -206,13 +208,16 @@
     font-size: 1rem;
     margin-right: auto;
   }
-
   .robot-gif {
-    top: 14vh;
+    top: 0vh;
     left: 50vw;
     transform: translateX(-50%);
+    width: 45vw;
+  }
+  
+  #robot-gif2{
+    top: 15vh;
 
-    width: 15rem;
   }
 
   .icon-container {
@@ -222,25 +227,18 @@
     margin: auto;
   }
 
-  #c1 {
-    position: relative;
-    width: 30vh;
-    font-size: 1.3rem;
-    top: 15vh;
-  }
   #c1,
   #c2,
   #c3 {
     position: relative;
-
     width: 40vh;
     font-size: 1.3rem;
     top: 10vh;
   }
   .next-btn-2 {
     position: absolute;
-    left: 0;
-    bottom: 30vh;
+    left: 50vw;
+    bottom: 17vh;
     border: none;
     width: 3rem;
     height: 3rem;
@@ -249,7 +247,7 @@
     font-weight: 700;
     font-size: 1.5rem;
     border-radius: 50%;
-    transform: translate(45vw, 50%);
+    transform: translate(-50%, 0%);
   }
   .next-btn-2:hover{
     transform: translate(45vw, 50%);
@@ -276,7 +274,7 @@
   text-transform: capitalize;
   font-weight: 800;
   font-family: "Source Code Pro", monospace;
-  margin-top: 32vh;
+  margin-top: 25vh;
 }
 
   .contact-h2 {

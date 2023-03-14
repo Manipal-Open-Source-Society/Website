@@ -61,7 +61,7 @@
   animation: shine 1.2s linear infinite;
 }
 .events-carousel-container {
-  height: 100vh;
+  min-height: 100vh;
   width: 95vw;
   margin: auto;
   background-color: rgb(4, 21, 21, 0.8);
@@ -98,8 +98,6 @@
 a {
   color: #a2c2b5;
   text-decoration: none;
-}
-.event-card-carousel {
 }
 
 .events-card-left,
@@ -148,26 +146,69 @@ a {
   display: none;
 }
 @media (max-width: 768px) {
+  .events-carousel{
+    height: max-content;
+    width: 90vw;
+    margin-left: 4vw;
+  }
+  #events-car {
+    height: max-content;
+    overflow: hidden;
+    width: 100vw;
+    margin-bottom: 5rem !important;
+    text-align: center;
+  }
+  #individal-car .carousel-control-prev,
+#individal-car .carousel-control-next {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+#individal-car .carousel-indicators {
+  display: none;
+}
+  #events-car .carousel-control-next, #events-car .carousel-control-prev {
+    display: block;
+    z-index: 100;
+    transform: none;
+    top: 100vh;
+    height: 50px;
+    color: black;
+    margin-top: 12rem;
+    filter: invert(100%);
+
+  }
+
+  #events-car .carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+
+  }
+  #events-car .carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+
+  }
   .events-container {
-  min-height: 100vh;    
+  height: max-content; 
   }
           .events-title2 {
     font-size: 3rem;
   }
+  
 
   .events-carousel-container {
-    height: 100vh;
     width: 100vw;
     margin: auto;
     background-color: rgb(4, 21, 21, 0.8);
     background: transparent;
     margin-top: 0rem;
     margin-left: 2.5vw;
+    height: calc(max-content + 50px);
   }
   .event-carousel-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: max-content;
   }
   .event-date {
     font-size: 1rem;
@@ -201,7 +242,7 @@ a {
   }
 
   .event-card-carousel {
-    height: 30vh;
+    min-height: 30vh;
   }
   .events-title {
     font-size: 2.5rem;
@@ -209,7 +250,7 @@ a {
   }
 
   .events-carousel-box {
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
   }
 }

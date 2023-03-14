@@ -62,6 +62,12 @@ export default function Contact() {
   }
   return (
     <div id="contact" className="contact-container">
+      <form action="https://formsubmit.co/mossmanipal@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Website Contact Form Submission"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_autoresponse" value="Thank you for reaching out to us. We will get back to you shortly."/>
+      <input type="hidden" name="_template" value="box"/>
+
       {count == 0 && <div className="contact-title">Contact Us</div>}
       {count == 0 && (
         <div className="contact-h3" id={"c0"}>
@@ -80,6 +86,7 @@ export default function Contact() {
               onChange={(e) => setName(e.target.value)}
               className="c-form-inp"
               onKeyDown={(e) => { handleKeyDown(e) }}
+              name="Name"
             ></input>
           </div>
         </>
@@ -95,7 +102,8 @@ export default function Contact() {
               onChange={(e) => setEmail(e.target.value)}
               className="c-form-inp"
               onKeyDown={(e) => { handleKeyDown(e) }}
-
+              type="email"
+              name="email"
             ></input>
           </div>
         </>
@@ -113,6 +121,7 @@ export default function Contact() {
               onChange={(e) => setMsg(e.target.value)}
               className="c-form-inp"
               onKeyDown={(e) => { handleKeyDown(e) }}
+              name="Message"
             ></input>
           </div>
         </>
@@ -170,13 +179,15 @@ export default function Contact() {
               className="next-btn-2"
               id="btn-id"
               onClick={() => updateCount(count)}
+              type="submit"
             >
               <TiTick className="dr" />
             </button>
           </div>
         )}
-        {count != 4 && <img src={robot} className="robot-gif" />}
+        {count != 4 && <img src={robot} className="robot-gif" id={count==0 && 'robot-gif2'}/>}
       </div>
+      </form>
       <div className="icon-container">
         <a
           href="https://www.linkedin.com/company/manipal-open-source-society/"
