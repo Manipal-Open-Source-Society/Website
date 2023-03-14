@@ -138,6 +138,7 @@ export default function Contact() {
       <div>
         {count == 0 && (
           <button
+          type={'button'}
             className="next-btn"
             style={{ opacity: 1 }}
             id="btn-id"
@@ -151,6 +152,7 @@ export default function Contact() {
           <div>
 
             <button
+          type={'button'}
               className="next-btn-2"
               id="btn-id"
               onClick={() => updateCount(count)}
@@ -164,6 +166,7 @@ export default function Contact() {
           <div>
 
             <button
+          type={'button'}
               className="next-btn-2"
               id="btn-id"
               onClick={() => updateCount(count)}
