@@ -67,6 +67,8 @@ export default function Contact() {
       <input type="hidden" name="_captcha" value="false"/>
       <input type="hidden" name="_autoresponse" value="Thank you for reaching out to us. We will get back to you shortly."/>
       <input type="hidden" name="_template" value="box"/>
+      <input type="hidden" name="_next" value="https://moss-manipal.netlify.app/">
+
 
       {count == 0 && <div className="contact-title">Contact Us</div>}
       {count == 0 && (
