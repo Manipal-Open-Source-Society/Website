@@ -62,7 +62,7 @@ export default function TopNav(props) {
             <Nav.Link
               className="mx-3"
               id="nav-item2"
-              href={props.page === "home" ? "./team" : "../team"}
+              href={props.page === "home" ? "../team" : "../team"}
             >
               Team
             </Nav.Link>
